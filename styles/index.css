@@ -1,4 +1,15 @@
 body {
   background-color: #090C08;
   color: #FEFFFE;
+  font-family: "Monument";
+}
+
+@font-face {
+  font-family: Monument;
+  src: url("/assets/fonts/MonumentExtended-Regular.otf");
+}
+
+@font-face {
+  font-family: 'Monument Bold';
+  src: url("/assets/fonts/MonumentExtended-Ultrabold.otf");
 }
