@@ -51,7 +51,8 @@ ul li a {
 nav {
   position: fixed;
   top: 50%;
-  right: -15%;
+  /* right: -15%; */
+  right: 0;
   z-index: 1;
   transform: rotate(90deg);
 }
@@ -110,6 +111,7 @@ nav img {
 }
 
 /* Tech stack section */
+
 #tech-stack div {
   margin: 2em;
   padding: 1.5em;
