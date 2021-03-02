@@ -1,9 +1,10 @@
 html {
   scroll-behavior: smooth;
+  cursor: cell;
 }
 
 body {
-  background-color: #090C08;
+  background-color: #090c08;
   color: #efeeef;
   font-family: "Monument";
 }
@@ -14,7 +15,7 @@ body {
 }
 
 @font-face {
-  font-family: 'Monument Bold';
+  font-family: "Monument Bold";
   src: url("/assets/fonts/MonumentExtended-Ultrabold.otf");
 }
 
@@ -28,7 +29,9 @@ section {
   align-items: center;
 }
 
-#hello, #about, #projects {
+#hello,
+#about,
+#projects {
   display: flex;
   flex-direction: column;
 }
@@ -48,8 +51,8 @@ ul li a {
 nav {
   position: fixed;
   top: 50%;
-  right: 0;
-  z-index:1;
+  right: -15%;
+  z-index: 1;
   transform: rotate(90deg);
 }
 
@@ -88,7 +91,10 @@ nav img {
   text-align: left;
   margin: 0;
   font-size: 0.5em;
-  border: 1px blue;
+}
+
+#hello span {
+  color: #2236f0;
 }
 
 /* About section */
@@ -101,6 +107,13 @@ nav img {
 #about a,
 #about a:visited {
   color: #efeeef;
+}
+
+/* Tech stack section */
+#tech-stack div {
+  margin: 2em;
+  padding: 1.5em;
+  border: 1px solid #2236f0;
 }
 
 /* Projects section */
