@@ -1,6 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #090C08;
-  color: #FEFFFE;
+  color: #efeeef;
   font-family: "Monument";
 }
 
@@ -12,4 +16,100 @@ body {
 @font-face {
   font-family: 'Monument Bold';
   src: url("/assets/fonts/MonumentExtended-Ultrabold.otf");
+}
+
+section {
+  height: 100vh;
+  width: 80vw;
+  margin: 0 auto;
+  border: 1px white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hello, #about, #projects {
+  display: flex;
+  flex-direction: column;
+}
+
+/* general list and link styles */
+ul {
+  list-style: none;
+}
+
+ul li a {
+  color: #efeeef;
+  font-size: 1.5em;
+  margin: 1em;
+}
+
+/* Navbar styles */
+nav {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index:1;
+  transform: rotate(90deg);
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+
+nav li a {
+  text-transform: lowercase;
+  color: #2236f0;
+}
+
+nav img {
+  height: 1.2em;
+}
+
+/* Main content wrapper */
+.wrapper {
+  display: block;
+  overflow-y: scroll;
+}
+
+/* Hello Section */
+#hello {
+  text-transform: lowercase;
+  font-size: 5em;
+  align-items: flex-start;
+}
+
+#hello h1 {
+  letter-spacing: 0.2em;
+}
+
+#hello p {
+  text-align: left;
+  margin: 0;
+  font-size: 0.5em;
+  border: 1px blue;
+}
+
+/* About section */
+#about {
+  width: 50vw;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+#about a,
+#about a:visited {
+  color: #efeeef;
+}
+
+/* Projects section */
+
+/* footer styles */
+footer ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
 }
