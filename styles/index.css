@@ -39,6 +39,7 @@ section {
 /* general list and link styles */
 ul {
   list-style: none;
+  padding-left: 0px;
 }
 
 ul li a {
@@ -114,14 +115,6 @@ nav img {
   color: #efeeef;
 }
 
-/* Tech stack section */
-
-#tech-stack div {
-  margin: 2em;
-  padding: 1.5em;
-  border: 1px solid #2236f0;
-}
-
 /* Projects section */
 .project-wrapper {
   display: flex;
@@ -172,4 +165,77 @@ footer ul {
   align-items: center;
   justify-content: center;
   margin-bottom: 2em;
+}
+
+/* laptop breakpoint */
+@media screen and (max-width: 2560px) {
+
+  html {
+    font-size: 11px;
+  }
+
+  #hello,
+  #projects h1 {
+    font-size: 3.5vw;
+  }
+
+  .project-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #projects {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: auto;
+  }
+}
+
+/* tablet */
+@media screen and (max-width: 1024px){
+
+  nav {
+    right: -10%;
+  }
+
+  #hello p {
+    font-size: 0.4em;
+  }
+
+  #about {
+    width: 60vw;
+  }
+}
+
+/* phone */
+@media screen and (min-width: 375px) and  (max-width: 850px){
+
+  nav {
+    display: none;
+  }
+
+  html {
+    font-size: 10px;
+  }
+
+  #hello h1 {
+    font-size: 5.5vw;
+  }
+
+  #hello p {
+    font-size: 4vw;
+  }
+
+  .project-container {
+    margin: 0.5em;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    border: 1px solid #2236f0;
+  }
+
+  .project-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
 }
