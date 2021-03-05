@@ -167,11 +167,12 @@ footer ul {
   margin-bottom: 2em;
 }
 
-/* laptop breakpoint */
-@media screen and (max-width: 2560px) {
 
-  html {
-    font-size: 11px;
+/* large screen */
+@media screen and (min-width: 1500px){
+
+  nav {
+    right: -7%;
   }
 
   #hello,
@@ -179,15 +180,54 @@ footer ul {
     font-size: 3.5vw;
   }
 
+  #about {
+    font-size: 1.3vw;
+  }
+
+  #projects {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    height: fit-content;
+  }
+
   .project-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .project-container img {
+    max-height: 25em;
+  }
+}
+
+/* laptop breakpoint */
+@media screen and (max-width: 1500px) {
+
+  nav {
+    right: -10%;
+    font-size: 1vw;
+  }
+
+  #hello,
+  #projects h1 {
+    font-size: 3.5vw;
+  }
+
+  #about {
+    font-size: 1.3vw;
+    width: 60vw;
+  }
+
+  .project-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1em;
   }
 
   #projects {
     margin-top: 1em;
     margin-bottom: 1em;
-    height: auto;
+    height: fit-content;
   }
 }
 
@@ -236,6 +276,6 @@ footer ul {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 80%;
   }
 }
