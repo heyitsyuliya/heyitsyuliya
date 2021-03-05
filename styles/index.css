@@ -172,7 +172,8 @@ footer ul {
 @media screen and (min-width: 1500px){
 
   nav {
-    right: -7%;
+    right: -5%;
+    margin-top: 1em;
   }
 
   #hello,
@@ -214,7 +215,7 @@ footer ul {
   }
 
   #about {
-    font-size: 1.3vw;
+    font-size: 1.5vw;
     width: 60vw;
   }
 
