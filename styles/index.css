@@ -259,12 +259,22 @@ footer ul {
     font-size: 10px;
   }
 
+  #hello,
+  #about {
+    height: 50vh;
+  }
+
   #hello h1 {
-    font-size: 5.5vw;
+    font-size: 6.2vw;
   }
 
   #hello p {
     font-size: 4vw;
+  }
+
+  #about {
+    width: 70vw;
+    font-size: 1.3em;
   }
 
   .project-container {
