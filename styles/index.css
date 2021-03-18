@@ -221,10 +221,12 @@ footer ul {
 
   nav {
     right: -10%;
+    font-size: 1.3vw;
   }
 
-  #hello p {
-    font-size: 1em;
+  #hello,
+  #projects h1 {
+    font-size: 3.5vw;
   }
 
   #about {
